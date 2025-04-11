@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Paths - Professional Dog Walking Services</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Vanilla JS Datepicker CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Paws & Paths</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content fade-in">
+                        <h1>Professional Dog Walking Services</h1>
+                        <p class="lead">Providing loving care and exercise for your furry friends when you can't be there.</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary">Our Services</a>
+                            <a href="#booking" class="btn btn-outline-primary">Book a Walk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Image Carousel -->
+                    <div id="dogCarousel" class="carousel slide fade-in" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Carousel items will be added via JavaScript -->
+                            <div class="carousel-item active">
+                                <div class="carousel-placeholder">
+                                    <i class="fas fa-dog"></i>
+                                    <p>Dog Image 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dogCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dogCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5 fade-in">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-heart feature-icon"></i>
+                        <h3>Loving Care</h3>
+                        <p>We treat every dog as if they were our own, with love, attention, and care.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <h3>Reliable Service</h3>
+                        <p>Consistent schedules and dependable service you can count on.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-map-marked-alt feature-icon"></i>
+                        <h3>Local Knowledge</h3>
+                        <p>We know the best walking routes and dog-friendly areas in the neighborhood.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2>Our Services</h2>
+                <p class="lead">Tailored dog walking services to meet your pet's needs</p>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h3>Standard Walk</h3>
+                        <p class="service-description">A 30-minute walk in your neighborhood, perfect for daily exercise.</p>
+                        <p class="service-price">$20 per walk</p>
+                        <a href="#booking" class="btn btn-outline-primary btn-sm">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Extended Walk</h3>
+                        <p class="service-description">A 60-minute walk for dogs that need more exercise and exploration.</p>
+                        <p class="service-price">$35 per walk</p>
+                        <a href="#booking" class="btn btn-outline-primary btn-sm">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Group Walk</h3>
+                        <p class="service-description">A social 45-minute walk with up to 3 other friendly dogs.</p>
+                        <p class="service-price">$25 per walk</p>
+                        <a href="#booking" class="btn btn-outline-primary btn-sm">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials mt-5">
+                <h3 class="text-center mb-4 fade-in">What Our Clients Say</h3>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="testimonial-card fade-in">
+                            <div class="testimonial-content">
+                                <p>"My dog Max absolutely loves his walks with Paws & Paths! He gets so excited when they arrive. Highly recommend!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <p><strong>Sarah Johnson</strong> and Max (Golden Retriever)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="testimonial-card fade-in">
+                            <div class="testimonial-content">
+                                <p>"Reliable, professional, and caring. My anxious rescue dog has really come out of her shell since starting walks with them."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <p><strong>Michael Thompson</strong> and Luna (Mixed Breed)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2>Book a Walk</h2>
+                <p class="lead">Schedule a walk for your furry friend</p>
+                <p class="booking-note">Limited to 2 bookings per day to ensure quality service</p>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="calendar-container fade-in">
+                        <h3>Select a Date</h3>
+                        <div id="booking-calendar" class="booking-calendar">
+                            <!-- Calendar will be inserted here via JavaScript -->
+                            <div class="calendar-placeholder">
+                                <i class="fas fa-calendar-alt"></i>
+                                <p>Calendar loading...</p>
+                            </div>
+                        </div>
+                        <div id="availability-info" class="mt-3">
+                            <p>Available slots will be shown after selecting a date.</p>
+                        </div>
+                        
+                        <!-- Calendar Legend -->
+                        <div class="calendar-legend mt-4">
+                            <div class="legend-item">
+                                <div class="legend-color legend-available"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color legend-partial"></div>
+                                <span>1 Slot Left</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color legend-booked"></div>
+                                <span>Fully Booked</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="booking-form-container fade-in">
+                        <h3>Your Information</h3>
+                        <form id="booking-form">
+                            <div class="mb-3">
+                                <label for="owner-name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="owner-name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="owner-email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="owner-email" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="owner-phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="owner-phone" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="dog-name" class="form-label">Dog's Name</label>
+                                <input type="text" class="form-control" id="dog-name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="dog-breed" class="form-label">Dog's Breed</label>
+                                <input type="text" class="form-control" id="dog-breed" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="service-type" class="form-label">Service Type</label>
+                                <select class="form-select" id="service-type" required>
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option value="standard">Standard Walk ($20)</option>
+                                    <option value="extended">Extended Walk ($35)</option>
+                                    <option value="group">Group Walk ($25)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="booking-date" class="form-label">Selected Date</label>
+                                <input type="text" class="form-control" id="booking-date" readonly>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="booking-time" class="form-label">Preferred Time</label>
+                                <select class="form-select" id="booking-time" disabled>
+                                    <option value="" selected disabled>Select a date first</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="special-instructions" class="form-label">Special Instructions</label>
+                                <textarea class="form-control" id="special-instructions" rows="3"></textarea>
+                            </div>
+                            
+                            <button type="button" id="proceed-to-payment" class="btn btn-primary" disabled>Proceed to Payment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Payment Section (Initially Hidden) -->
+            <div id="payment-section" class="mt-5 d-none">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="payment-container fade-in">
+                            <h3 class="text-center mb-4">Payment Details</h3>
+                            
+                            <div class="booking-summary mb-4">
+                                <h4>Booking Summary</h4>
+                                <div id="booking-summary-details">
+                                    <!-- Summary will be populated via JavaScript -->
+                                </div>
+                                <div class="total-amount mt-3">
+                                    <h5>Total: <span id="booking-total-amount">$0.00</span></h5>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-form">
+                                <form id="payment-form">
+                                    <div class="mb-3">
+                                        <label for="card-element" class="form-label">Credit or Debit Card</label>
+                                        <div id="card-element" class="form-control">
+                                            <!-- Stripe Card Element will be inserted here -->
+                                            <div class="card-placeholder">
+                                                <i class="fas fa-credit-card"></i>
+                                                <p>Card details form will appear here</p>
+                                            </div>
+                                        </div>
+                                        <div id="card-errors" class="text-danger mt-2"></div>
+                                    </div>
+                                    
+                                    <button type="button" id="submit-payment" class="btn btn-primary">Complete Booking</button>
+                                    <button type="button" id="back-to-booking" class="btn btn-outline-secondary">Back</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Confirmation Section (Initially Hidden) -->
+            <div id="confirmation-section" class="mt-5 d-none">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="confirmation-container text-center fade-in">
+                            <i class="fas fa-check-circle confirmation-icon"></i>
+                            <h3>Booking Confirmed!</h3>
+                            <p class="lead">Thank you for booking with Paws & Paths.</p>
+                            <div id="confirmation-details" class="mt-4">
+                                <!-- Confirmation details will be populated via JavaScript -->
+                            </div>
+                            <p class="mt-4">A confirmation email has been sent to your email address.</p>
+                            <button type="button" id="new-booking" class="btn btn-primary mt-3">Make Another Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Paws & Paths</h4>
+                    <p>Professional dog walking services with a personal touch.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@pawsandpaths.com</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="copyright">© 2025 Paws & Paths. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Vanilla JS Calendar -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
+    
+    <!-- Stripe JS -->
+    <script src="https://js.stripe.com/v3/"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>

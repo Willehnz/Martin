@@ -1,0 +1,398 @@
+/* 
+ * Paws & Paths - Dog Walking Business Website
+ * Responsive Styles
+ */
+
+/* ===== Mobile First Approach ===== */
+/* Base styles are for mobile devices */
+/* Media queries target larger screens */
+
+/* ===== Small devices (landscape phones, 576px and up) ===== */
+@media (min-width: 576px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-buttons .btn {
+        margin-right: 1.5rem;
+    }
+    
+    .carousel-placeholder {
+        height: 350px;
+    }
+}
+
+/* ===== Medium devices (tablets, 768px and up) ===== */
+@media (min-width: 768px) {
+    .section {
+        padding: 100px 0;
+    }
+    
+    #home {
+        padding-top: 140px;
+    }
+    
+    .navbar {
+        padding: 20px 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.75rem;
+    }
+    
+    .nav-link {
+        margin: 0 15px;
+    }
+    
+    .hero-content h1 {
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        margin-top: 2.5rem;
+    }
+    
+    .feature-box {
+        padding: 2.5rem;
+    }
+    
+    .service-card {
+        padding: 2.5rem;
+    }
+    
+    .testimonial-card {
+        padding: 2.5rem;
+    }
+    
+    .calendar-container,
+    .booking-form-container {
+        padding: 2.5rem;
+    }
+    
+    .payment-container {
+        padding: 2.5rem;
+    }
+    
+    .confirmation-container {
+        padding: 4rem 3rem;
+    }
+    
+    .footer {
+        padding: 4rem 0 2rem;
+    }
+}
+
+/* ===== Large devices (desktops, 992px and up) ===== */
+@media (min-width: 992px) {
+    body {
+        font-size: 1.1rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    .section {
+        padding: 120px 0;
+    }
+    
+    #home {
+        padding-top: 160px;
+    }
+    
+    .hero-content {
+        padding-right: 3rem;
+    }
+    
+    .carousel-placeholder {
+        height: 400px;
+    }
+    
+    .feature-icon {
+        font-size: 3rem;
+    }
+    
+    .service-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .service-icon i {
+        font-size: 2.5rem;
+    }
+    
+    .service-price {
+        font-size: 1.4rem;
+    }
+    
+    .confirmation-icon {
+        font-size: 5rem;
+    }
+}
+
+/* ===== Extra large devices (large desktops, 1200px and up) ===== */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .section {
+        padding: 140px 0;
+    }
+    
+    #home {
+        padding-top: 180px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .carousel-placeholder {
+        height: 450px;
+    }
+}
+
+/* ===== Mobile Specific Styles (max-width: 767px) ===== */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+    
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 1rem;
+    }
+    
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-box {
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .calendar-container {
+        margin-bottom: 2rem;
+    }
+    
+    .footer h4 {
+        margin-top: 2rem;
+    }
+    
+    .footer .col-md-4:first-child h4 {
+        margin-top: 0;
+    }
+}
+
+/* ===== Touch Device Optimizations ===== */
+@media (hover: none) {
+    /* Enhance tap targets for touch devices */
+    .btn {
+        padding: 0.75rem 1.75rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+    
+    .service-card .btn {
+        padding: 0.5rem 1.25rem;
+    }
+    
+    /* Disable hover effects that don't work well on touch devices */
+    .feature-box:hover,
+    .service-card:hover,
+    .card-hover-effect:hover {
+        transform: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .btn-hover-effect:after {
+        display: none;
+    }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+    .navbar,
+    .footer,
+    .hero-buttons,
+    #services,
+    .booking-form-container,
+    .payment-form,
+    button {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    .confirmation-container {
+        page-break-inside: avoid;
+        border: 1px solid #ddd;
+        padding: 20pt;
+        margin: 20pt 0;
+    }
+    
+    #confirmation-details {
+        margin-top: 15pt;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* ===== High-DPI Screen Optimizations ===== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize images for high-DPI screens if needed */
+    /* This would be used if we had specific high-res images */
+}
+
+/* ===== Landscape Orientation Specific Styles ===== */
+@media (orientation: landscape) and (max-height: 500px) {
+    .navbar {
+        padding: 5px 0;
+    }
+    
+    #home {
+        padding-top: 100px;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .carousel-placeholder {
+        height: 200px;
+    }
+    
+    .feature-box,
+    .service-card,
+    .testimonial-card,
+    .calendar-container,
+    .booking-form-container,
+    .payment-container {
+        padding: 1.5rem;
+    }
+}
+
+/* ===== Dark Mode Support (if user has dark mode enabled) ===== */
+@media (prefers-color-scheme: dark) {
+    /* These styles will only apply if the user has dark mode enabled */
+    /* We're not implementing full dark mode, but adding this for future reference */
+    
+    /* Example of how dark mode could be implemented:
+    :root {
+        --background-color: #121212;
+        --background-alt: #1E1E1E;
+        --text-color: #E0E0E0;
+        --text-light: #BBBBBB;
+        --border-color: #333333;
+    }
+    
+    .navbar {
+        background-color: rgba(18, 18, 18, 0.95);
+    }
+    
+    .feature-box,
+    .service-card,
+    .testimonial-card,
+    .calendar-container,
+    .booking-form-container,
+    .payment-container {
+        background-color: #1E1E1E;
+    }
+    */
+}
+
+/* ===== Reduced Motion Preference ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .fade-in,
+    .slide-in-left,
+    .slide-in-right,
+    .scale-in,
+    .rotate-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
